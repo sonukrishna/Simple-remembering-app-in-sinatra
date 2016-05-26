@@ -1,0 +1,7 @@
+<% if @note %>
+  <p>Are you sure you wnt to delete the note: <em> <% @note.content %></em>em?</p>
+  <form action="/<%= @note.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Yes,delete">
+    </form>
+ <% end %>
